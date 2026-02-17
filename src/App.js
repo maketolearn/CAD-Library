@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import './Styles/Page.css';
 
-//Home page
+//Home page test
 const App = () => {
 
   const navigate = useNavigate();
