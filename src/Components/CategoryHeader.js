@@ -33,7 +33,7 @@ const CategoryHeader = ({subject}) => {
                             background: isActive ? '#c1c1c1' : '',
                             textDecoration: "none",
                             padding: isActive ? '10px 21px' : '5px 10px',
-                        })}>Technology</NavLink>
+                        })}>Design</NavLink>
                     </li>
                     <li class="cat-item cat-item-engineering cat-item-9" >
                         <NavLink id={engineeringID} to="/engineering" style={({ isActive }) => ({

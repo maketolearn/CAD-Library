@@ -43,6 +43,22 @@
     align-items: center;
 }
 
+
+#design-banner {
+    background-color: #895d2e;
+    font-size:18px;
+    display: flex;
+    color: white;
+    font-family: Cabin,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    display: flex;
+    justify-content: space-between; /* This pushes the items apart */
+    align-items: center;
+}
+
 #mathematics-banner {
     background-color: #de703c;
     font-size:18px;

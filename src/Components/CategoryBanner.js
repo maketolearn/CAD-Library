@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const CategoryBanner= ({subject}) => {   
 
-    const id = subject.toLowerCase() + "-banner";
+    let id = subject.toLowerCase() + "-banner";
 
     const [hamburger, setHamburger] = useState(false);
 
@@ -25,7 +25,12 @@ const CategoryBanner= ({subject}) => {
     const engineeringID = (subject === "Engineering" ? "engineering-active" : "");
     const mathID = (subject === "Mathematics" ? "mathematics-active" : "");
 
-
+    //Accomodate for Technology to Design change
+    if (subject == "Technology"){
+        id = "design-banner";
+        subject = "Design";
+    }
+    
     return (
         <div>
             <container id={id}>

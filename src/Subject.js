@@ -36,6 +36,7 @@ const Subject = ({ subjectArg }) => {
   let formattedEquipmentList = [];
   let subjectCapitalized = subject.charAt(0).toUpperCase() + subject.slice(1);
 
+
   useEffect(() => {
     setSearchObjects([]);
     setSearchTerm("");
@@ -402,7 +403,7 @@ const Subject = ({ subjectArg }) => {
         <div class="site">
           <MainHeader input={searchTerm}  setInput={setSearchTerm} handleSubmit={handleSubmit} subject={subjectCapitalized} showComponent={showComponent} handleCheckboxChange={handleCheckboxChange} showFilter={true}></MainHeader>
           <CategoryHeader></CategoryHeader>
-          <CategoryBanner subject={subjectCapitalized}></CategoryBanner>
+          <CategoryBanner subject={subjectCapitalized}></CategoryBanner> 
           <div id="page">
 
             <div class={resultsDisplay}>
