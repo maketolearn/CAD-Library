@@ -1044,7 +1044,7 @@ const Submission = () => {
                       <br></br>
                       <tr>
                           <td>
-                              <label for="fabGuidePackage"> <b className="req">Fabrication Guide</b><span className="toolTip" title={tooltips.fabGuidePackage}>?</span></label>
+                              <label for="fabGuidePackage"> <b className="req">CAD Models</b><span className="toolTip" title={tooltips.fabGuidePackage}>?</span></label>
                           </td>
                           <td><input type="file" onChange={(event) => handleZipping(event, 'Fabrication_')} multiple></input></td>
                       </tr>

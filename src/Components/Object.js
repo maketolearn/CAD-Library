@@ -339,7 +339,7 @@ const Object = () => {
                                         {instructAvail ? <a href={instructionalResourcesUrl}>Instructional Resources</a> : <p>No instructional resources at this time</p>}
                                     </li>
                                     <li>
-                                       {fabAvail ? <a href={fabricationGuideUrl}>Fabrication Guide</a> : <p>No fabrication guide at this time</p>}
+                                       {fabAvail ? <a href={fabricationGuideUrl}>CAD Models</a> : <p>No fabrication guide at this time</p>}
                                     </li>
                                 </ul> : <p class="detail">No download packages available for this dataset at this time</p>}
                                 

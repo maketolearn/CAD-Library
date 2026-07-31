@@ -115,8 +115,8 @@ const HorseEvolution = () => {
                                     <li>
                                         <a href={instructionalResourcesUrl}>Instructional Resources</a>
                                     </li>
-                                    <li>
-                                        <a href={fabricationGuideUrl}>Fabrication Guide</a>
+                                    <li> 
+                                        <a href={fabricationGuideUrl}>CAD Models </a>
                                     </li>
                                 </ul>
 
