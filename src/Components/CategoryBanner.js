@@ -54,7 +54,7 @@ const CategoryBanner= ({subject}) => {
                         <NavLink to="/science" >Science</NavLink>
                     </li>
                     <li class="menu-item menu-item-technology">
-                        <NavLink to="/technology" >Technology</NavLink>
+                        <NavLink to="/technology" >Design</NavLink>
                     </li>
                     <li class="menu-item menu-item-engineering" >
                         <NavLink to="/engineering" >Engineering</NavLink>
