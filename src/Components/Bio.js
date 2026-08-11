@@ -15,7 +15,7 @@ const Bio = () => {
     const [searchObjects, setSearchObjects] = useState([]);
     const [subject, setSubject] = useState("Library");
     const [imgLocation, setImgLocation] = useState("")
-    const [description, setDescription] = useState([]) // array for easy storage of paragraphs
+    const [description, setDescription] = useState([]) //array for easy storage of paragraphs
 
     const navigate = useNavigate();
     const namePieces = name.split("-");
