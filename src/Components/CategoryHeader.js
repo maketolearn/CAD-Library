@@ -28,13 +28,6 @@ const CategoryHeader = ({subject}) => {
                             padding: isActive ? '10px 37px' : '5px 10px',
                         })}>Science</NavLink>
                     </li>
-                    <li class="cat-item cat-item-technology cat-item-9">
-                        <NavLink id={techID} to="/technology" style={({ isActive }) => ({
-                            background: isActive ? '#c1c1c1' : '',
-                            textDecoration: "none",
-                            padding: isActive ? '10px 21px' : '5px 10px',
-                        })}>Design</NavLink>
-                    </li>
                     <li class="cat-item cat-item-engineering cat-item-9" >
                         <NavLink id={engineeringID} to="/engineering" style={({ isActive }) => ({
                             background: isActive ? '#c1c1c1' : '',
@@ -48,6 +41,13 @@ const CategoryHeader = ({subject}) => {
                             textDecoration: "none",
                             padding: isActive ? '10px 18px' : '5px 10px',
                         })}>Mathematics</NavLink>
+                    </li>
+                    <li class="cat-item cat-item-technology cat-item-9">
+                        <NavLink id={techID} to="/design" style={({ isActive }) => ({
+                            background: isActive ? '#c1c1c1' : '',
+                            textDecoration: "none",
+                            padding: isActive ? '10px 21px' : '5px 10px',
+                        })}>Design</NavLink>
                     </li>
                     <li class="cat-item cat-item-forum cat-item-9" >
                         {/* <NavLink to="/forum" style={({ isActive }) => ({

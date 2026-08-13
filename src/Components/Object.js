@@ -33,6 +33,7 @@ const Object = () => {
     const [developerName, setDeveloperName] = useState("");
     const [developerLink, setDeveloperLink] = useState("");
     const [instructionalResourcesUrl, setInstructionalResourcesUrl] = useState(""); //download url for the instructional resources zip file
+    const [isComputerSoftware, setComputerSoftware] = useState(""); //download url for the software guide zip file 
     const [fabricationGuideUrl, setFabricationGuideUrl] = useState(""); //download url for the fabrication guide zip file
     const [primaryDiscipline, setPrimaryDiscipline] = useState("");
     const [secondaryDiscipline, setSecondaryDiscipline] = useState("");
@@ -51,6 +52,7 @@ const Object = () => {
     const [authorsFormmated, setAuthorsFormatted] = useState("");
     const [year, setYear] = useState("");
     const [pubDate, setPubDate] = useState("");
+
 
     let doiPieces = [];
     doiPieces.push(doi.substring(0, 2));
@@ -237,7 +239,16 @@ const Object = () => {
 
                 if(fabricationID != -1){
                     setFabricationGuideUrl("https://dataverse.lib.virginia.edu/api/access/datafile/" + fabricationID);
-                    setFabAvail(true);
+                    //setFabAvail(true);
+                    //console.log(fabricationID)
+                    if (fabricationID ==  120883){
+                        setComputerSoftware(true);
+                        setFabAvail(false);
+                    }
+                    else{
+                        setComputerSoftware(false);
+                        setFabAvail(true);
+                    }
                 }
 
                 if(instructionalID != -1){
@@ -339,7 +350,13 @@ const Object = () => {
                                         {instructAvail ? <a href={instructionalResourcesUrl}>Instructional Resources</a> : <p>No instructional resources at this time</p>}
                                     </li>
                                     <li>
-                                       {fabAvail ? <a href={fabricationGuideUrl}>CAD Models</a> : <p>No fabrication guide at this time</p>}
+                                        {isComputerSoftware ? (
+                                            <a href={fabricationGuideUrl}>Computer Software</a>
+                                        ) : fabAvail ? (
+                                            <a href={fabricationGuideUrl}>CAD Models</a>
+                                        ) : (
+                                            <p>No fabrication guide at this time</p>
+                                        )}
                                     </li>
                                 </ul> : <p class="detail">No download packages available for this dataset at this time</p>}
                                 

@@ -53,14 +53,14 @@ const CategoryBanner= ({subject}) => {
                     <li class="menu-item menu-item-science" >
                         <NavLink to="/science" >Science</NavLink>
                     </li>
-                    <li class="menu-item menu-item-technology">
-                        <NavLink to="/technology" >Design</NavLink>
-                    </li>
                     <li class="menu-item menu-item-engineering" >
                         <NavLink to="/engineering" >Engineering</NavLink>
                     </li>
                     <li class="menu-item menu-item-mathematics" >
                         <NavLink to="/mathematics" >Mathematics</NavLink>
+                    </li>
+                    <li class="menu-item menu-item-technology">
+                        <NavLink to="/design" >Design</NavLink>
                     </li>
                     <li class="menu-item menu-item-forum" >
                         <a href="https://forum.cadlibrary.org/">Forum</a>

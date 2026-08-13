@@ -41,10 +41,10 @@ const App = () => {
 
             <ul>
               <li>Curator-in-Chief - <Link to="/people/Glen-Bull">Glen Bull</Link></li>
-              <li>Curator, Mathematics Education Collection - <Link to="/people/Steven-Greenstein">Steven Greenstein</Link> and <Link to="/people/Allison-McCulloch">Allison McCulloch</Link></li>
               <li>Curator, Science Education Collection - <Link to="/people/Sumreen-Asim">Sumreen Asim</Link></li>
-              <li>Curator, Design Collection - <a href="mailto:jbw3r@virginia.edu">Jo Watts</a> and <a href="mailto:moseskumenya@aah.ug">Moses Kumenya</a> </li>
               <li>Curator, Engineering Education Collection - <Link to="/people/Ryan-Novitski">Ryan Novitski</Link></li>
+              <li>Curator, Mathematics Education Collection - <Link to="/people/Steven-Greenstein">Steven Greenstein</Link></li>
+              <li>Curator, Design Collection - <a href="mailto:jbw3r@virginia.edu">Jo Watts</a> and <a href="mailto:moseskumenya@aah.ug">Moses Kumenya</a> </li>
             </ul>
 
             <p>

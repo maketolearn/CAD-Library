@@ -21,7 +21,7 @@ ReactDOM.render(
       <Route path="/" element={<App/>}></Route>
       {/* https://stackoverflow.com/questions/49001001/using-same-component-for-different-route-path-in-react-router-v4 */}
       <Route path="/science" element={<Subject key="science" subjectArg="science"/>}></Route>
-      <Route path="/technology" element={<Subject key="technology" subjectArg="technology"/>}></Route>
+      <Route path="/design" element={<Subject key="technology" subjectArg="technology"/>}></Route>
       <Route path="/engineering" element={<Subject key="engineering" subjectArg="engineering"/>}></Route>
       <Route path="/mathematics" element={<Subject key="mathematics" subjectArg="mathematics"/>}></Route>
       <Route path="/browse" element={<SearchLibrary/>}></Route>
