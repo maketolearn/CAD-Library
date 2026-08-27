@@ -91,7 +91,7 @@ const Object = () => {
         
                 setImgUrl("https://dataverse.lib.virginia.edu/api/access/datafile/" + imgID);
 
-                console.log(object.data.data)
+                //console.log(object.data.data)
 
                 //change the citation api response to a dictionary
                 let citationBlock = object.data.data.latestVersion.metadataBlocks.citation.fields;
@@ -227,6 +227,7 @@ const Object = () => {
                 //fabrication and learning packages
                 let instructionalID = -1
                 let fabricationID = -1
+                let objectIdentifier = object.data.data.identifier
 
                 for (let i = 0; i < files.length; i++) {
                     if (files[i].label.toLowerCase().substring(0, 11) === "fabrication"){
@@ -240,8 +241,8 @@ const Object = () => {
                 if(fabricationID != -1){
                     setFabricationGuideUrl("https://dataverse.lib.virginia.edu/api/access/datafile/" + fabricationID);
                     //setFabAvail(true);
-                    //console.log(fabricationID)
-                    if (fabricationID ==  120883){
+                    //console.log(objectIdentifier)
+                    if (objectIdentifier == "V3/LXPYQH"){
                         setComputerSoftware(true);
                         setFabAvail(false);
                     }
@@ -383,11 +384,11 @@ const Object = () => {
                             }
                                 
                             <h4> Citation </h4>
-                                <p>{authorsFormmated} ({year}). <em>{title}</em> [Educational Object]. <em>Educational CAD Model Library</em>. Published {pubDate}. NTLS Coalition. doi:10.18130/{dataverseDoi} </p>
+                                <p>{authorsFormmated} ({year}). <em>{title}</em> [{isComputerSoftware ? "Computer Software" : 'Educational Object'}]. <em>Educational CAD Model Library</em>. Published {pubDate}. National Technology Leadership Society. doi:10.18130/{dataverseDoi} </p>
 
                             {relatedWorkAvail && <h4>Related Articles</h4>}
                             {relatedWorkAvailURL && 
-                                <ul>
+                                <ul>    
                                 {relatedWorks.map((workl) => (
                                     <li><a href={workl.url}>{workl.title}</a> </li>
                                 ))}

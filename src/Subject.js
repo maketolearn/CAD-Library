@@ -92,6 +92,7 @@ const Subject = ({ subjectArg }) => {
     setNoObjects(undefined);
     axios.get(`https://dataverse.lib.virginia.edu/api/dataverses/CADLibrary${subjectCapitalized}/contents`)
     .then((response) => {
+      console.log(response);
     for(var i = 0; i < response.data.data.length; i += 1){
         dois.push(response.data.data[i].identifier);
     }
